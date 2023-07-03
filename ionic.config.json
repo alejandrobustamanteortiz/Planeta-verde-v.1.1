@@ -1,0 +1,7 @@
+{
+  "name": "Planeta-verde-v.1.1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
