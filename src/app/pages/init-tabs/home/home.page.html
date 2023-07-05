@@ -42,6 +42,13 @@
           <h3 class="titulo">Top Categorias</h3>
         </div>
 
+        
+        <swiper-container>
+          <swiper-slide *ngFor="let item of categories">
+            <app-category-item [item]="item"></app-category-item>
+          </swiper-slide>
+        </swiper-container>
+
       
       
 

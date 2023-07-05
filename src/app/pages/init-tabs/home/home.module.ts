@@ -9,6 +9,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 import { SearchbarModule } from 'src/app/components/searchbar/searchbar.module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CategoryItemModule } from 'src/app/components/category-item/category-item.module';
 
 
 
@@ -19,7 +20,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    SearchbarModule
+    SearchbarModule,
+    CategoryItemModule
   ],
   declarations: [HomePage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
