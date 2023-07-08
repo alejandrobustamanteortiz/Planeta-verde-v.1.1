@@ -15,6 +15,11 @@ export class HomePage implements OnInit {
 
   categories!: Category[];
 
+ 
+  
+ 
+  
+
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {

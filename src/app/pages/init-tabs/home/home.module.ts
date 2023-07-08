@@ -12,8 +12,6 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CategoryItemModule } from 'src/app/components/category-item/category-item.module';
 
 
-
-
 @NgModule({
   imports: [
     CommonModule,
@@ -26,4 +24,7 @@ import { CategoryItemModule } from 'src/app/components/category-item/category-it
   declarations: [HomePage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class HomePageModule {}
+export class HomePageModule {
+
+ 
+}

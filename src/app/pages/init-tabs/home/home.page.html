@@ -1,36 +1,81 @@
 <ion-app>
 
-  <!--MENU-->
+  <!--MENU LATERAL-->
   
   <ion-menu contentId="main-content">
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Menú</ion-title>
+      <ion-toolbar color="blank">
+        <div class="logoMenu">
+          <ion-img src="../../../../assets/icon/Planeta verde.png"></ion-img>
+        </div>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
-      This is the menu content.
+      
+      <div class="listaCategoriasMenu">
+
+        <ion-item>
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Mi cuenta</ion-label>
+        </ion-item>
+    
+        <ion-item>
+          <ion-icon name="menu"></ion-icon>
+          <ion-label>Categorías</ion-label>
+        </ion-item>
+        <ion-item >
+          <ion-icon name="mail"></ion-icon>
+          <ion-label>Contacto</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-label>Avison legal</ion-label>
+        </ion-item>
+
+
+      </div>
+      
     </ion-content>
   </ion-menu>
 
-  <!--HOME-->
+
+
+  <!--PANTALLA PRINCIPAL-->
+
   <div class="ion-page" id="main-content">
 
     <!--HEADER-->
-    <ion-header>
+
+    <ion-header class="headerContent">
+
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
+
+          <div class="logoHeader">
+            <ion-img src="../../../../assets/icon/Planeta verde.png"></ion-img>
+          </div>
+
+          <div class="textoHeader">
+            <ion-img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=000101&width=435&lines=Bienvenido+a+Planeta+Verde" alt="Typing SVG"></ion-img>
+          </div>
+
         </ion-buttons>
-        <ion-title class="ion-no-margin"><ion-label color="primary">Planeta Verde</ion-label></ion-title>
-        
       </ion-toolbar>
+
+      <!--SEARCHBAR (INSIDE HEADER)-->
+
       <app-searchbar></app-searchbar>
+
     </ion-header>
+
+    <!--CONTENT-->
+
     <ion-content class="ion-padding">
+
       <!--BANNER-->
 
-        <swiper-container>
+        <swiper-container class="banner">
           <swiper-slide><ion-img src="./../../../../assets/banner/fruteria.jpg"></ion-img></swiper-slide>
           <swiper-slide><ion-img src="./../../../../assets/banner/fruteria2.jpg"></ion-img></swiper-slide>
           <swiper-slide><ion-img src="./../../../../assets/banner/bebibas-filas.jpg"></ion-img></swiper-slide>
@@ -39,19 +84,25 @@
         <!--CATEGORIAS-->
 
         <div class="list-title">
-          <h3 class="titulo">Top Categorias</h3>
+          <h3 class="titulo">Categorias</h3>
         </div>
-
         
-        <swiper-container>
-          <swiper-slide *ngFor="let item of categories">
-            <app-category-item [item]="item"></app-category-item>
-          </swiper-slide>
-        </swiper-container>
+        
 
-      
-      
 
+
+          <swiper-container slides-per-view="4.2">
+            <swiper-slide *ngFor="let item of categories"><app-category-item [item]="item"></app-category-item></swiper-slide>
+          </swiper-container>
+          
+     
+        
+
+        <div class="list-title">
+          <h3 class="titulo">Lo más comprado</h3>
+        </div>
+        
+       
 
     </ion-content>
   </div>

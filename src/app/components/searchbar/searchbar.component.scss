@@ -1,6 +1,18 @@
-ion-searchbar{
 
-    --border-radius: 30px;
-    margin-bottom: 1.5rem;
+.searchbar-container{
 
+    display: flex;
+    justify-content: center;
+
+    ion-searchbar{
+
+    
+        --border-radius: 1.2rem;
+        --placeholder-font-weight: 600;
+        --placeholder-opacity: 0.2;
+        margin-bottom: 1rem;
+        width: 75%;
+        
+    
+    }
 }

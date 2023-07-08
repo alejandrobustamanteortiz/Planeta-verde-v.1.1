@@ -4,8 +4,8 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #6fb408;
-  --ion-color-primary-rgb: 111, 180, 8;
+  --ion-color-primary: #00a48d;
+  --ion-color-primary-rgb: 0, 164, 141;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
@@ -234,3 +234,6 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
