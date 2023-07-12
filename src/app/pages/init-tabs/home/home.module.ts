@@ -10,6 +10,8 @@ import { HomePage } from './home.page';
 import { SearchbarModule } from 'src/app/components/searchbar/searchbar.module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CategoryItemModule } from 'src/app/components/category-item/category-item.module';
+import {  } from 'src/app/components/product-card/product-card.component';
+import { ProductCardModule } from 'src/app/components/product-card/product-card.module';
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { CategoryItemModule } from 'src/app/components/category-item/category-it
     IonicModule,
     HomePageRoutingModule,
     SearchbarModule,
-    CategoryItemModule
+    CategoryItemModule,
+    ProductCardModule
   ],
   declarations: [HomePage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

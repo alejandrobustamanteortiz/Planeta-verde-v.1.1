@@ -1,0 +1,58 @@
+.food-card{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(247, 235, 235);
+
+    ion-img{
+
+        
+
+    }
+
+    .card-content{
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+
+
+        .title{
+
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: -15px;
+            margin-left: 5px;
+            padding-bottom: 5px;
+        }
+
+    
+
+        .precio{
+
+            font-size: 1.3rem;
+            color: #ffb800;
+            margin-bottom: 0px;
+            margin-left: 5px;
+ 
+        }
+
+        .desc{
+            font-size: 0.7rem;
+            margin-top: 0;
+            margin-left: 5px;
+
+        }
+    }
+
+
+
+}
+
+

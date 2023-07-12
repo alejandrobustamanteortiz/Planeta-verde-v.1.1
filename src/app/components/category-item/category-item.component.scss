@@ -5,16 +5,20 @@
     align-items: center;
     text-align: center;
     
+    
+    
+    
+    
 
     .image-card{
 
-        
+        margin-right: 15px;
         padding: 0.8rem;
         background-color: #f3f3f3;
         border-radius: 1.5rem;
         margin-bottom: 0.5rem;
         padding: 0.8rem;
-        margin-right: 1rem;
+        
 
         ion-img{
 
@@ -28,7 +32,9 @@
     
 
     p{
-        color: #c7c7c7;  
+        color: #c7c7c7;
+        margin-right: 15px;
+        
     }
 
 

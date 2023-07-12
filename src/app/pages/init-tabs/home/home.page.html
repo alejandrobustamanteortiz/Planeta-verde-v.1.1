@@ -54,18 +54,19 @@
       <ion-toolbar>
 
         <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
+          <ion-menu-button>
+            <ion-icon name="list-outline" ></ion-icon>
+          </ion-menu-button>
 
-          <div class="logoHeader">
-            <ion-img src="../../../../assets/icon/Planeta verde.png"></ion-img>
-          </div>
 
           <div class="textoHeader">
-            <ion-img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=000101&width=435&lines=Bienvenido+a+Planeta+Verde" alt="Typing SVG"></ion-img>
+            <ion-img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=000101&width=435&lines=Bienvenida/o+a+Planeta+Verde" alt="Typing SVG"></ion-img>
           </div>
         </ion-buttons>
 
-        
+        <ion-buttons slot="end">
+          <ion-button><ion-icon name="cart"></ion-icon></ion-button>
+        </ion-buttons>
 
       </ion-toolbar>
 
@@ -80,22 +81,23 @@
     <ion-content class="ion-padding">
 
       <!--BANNER-->
+      <div class="banner">
 
-        <swiper-container class="banner">
-          <swiper-slide><ion-img src="./../../../../assets/banner/fruteria.jpg"></ion-img></swiper-slide>
-          <swiper-slide><ion-img src="./../../../../assets/banner/fruteria2.jpg"></ion-img></swiper-slide>
-          <swiper-slide><ion-img src="./../../../../assets/banner/bebibas-filas.jpg"></ion-img></swiper-slide>
+        <swiper-container>
+          <swiper-slide><ion-img src="./../../../../assets/banner/panel.png"></ion-img></swiper-slide>
+          <swiper-slide><ion-img src="./../../../../assets/banner/kiwiquote.png"></ion-img></swiper-slide>
+          <swiper-slide><ion-img src="./../../../../assets/banner/Frame 1.png"></ion-img></swiper-slide>
         </swiper-container>
+
+
+      </div>
+        
 
         <!--CATEGORIAS-->
 
         <div class="list-title">
           <h3 class="titulo">Categorias</h3>
         </div>
-        
-        
-
-
 
           <swiper-container slides-per-view="4.2">
             <swiper-slide *ngFor="let item of categories"><app-category-item [item]="item"></app-category-item></swiper-slide>
@@ -103,13 +105,18 @@
           
      
         
-
+        <!--PRODUCTOS-->
         <div class="list-title">
-          <h3 class="titulo">Lo más comprado</h3>
+          <h3 class="titulo">Top Ventas</h3>
         </div>
-        
-       
 
+      
+
+          <swiper-container slides-per-view="2.2">
+            <swiper-slide *ngFor="let product of products"><app-product-card [item]="product"></app-product-card></swiper-slide>
+          </swiper-container>
+
+        
     </ion-content>
   </div>
 </ion-app>
