@@ -1,50 +1,23 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product.model';
+import { doc,collection,getDocs, docSnapshots, Firestore } from '@angular/fire/firestore';
+import { map } from 'rxjs/operators';
+import { Observable,take } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  constructor(private firestore: Firestore) {}
 
-  getProducts(): Product[]{
-
-    return[
-      {
-        id: 1,
-        title: "Macarrones Castagno",
-        image: 'assets/productos/macarrones-de-kamut800.png',
-        price: 3.55,
-        description: "(0.92/kg)", 
-
-      },
-      {
-        id: 2,
-        title: "Macarrones Castagno",
-        image: 'assets/productos/macarrones-de-kamut800.png',
-        price: 3.95,
-        description: "(0.92/kg)", 
-
-      },
-      {
-        id: 3,
-        title: "Macarrones Castagno",
-        image: 'assets/productos/macarrones-de-kamut800.png',
-        price: 3.55,
-        description: "(0.92/kg)", 
-
-      },
-      {
-        id: 4,
-        title: "Macarrones Castagno",
-        image: 'assets/productos/macarrones-de-kamut800.png',
-        price: 3.95,
-        description: "(0.92/kg)", 
-
-      },
-    ]
-
-
+  async getProducts(): Promise<Product[]> {
+     const documents = await getDocs(collection(this.firestore, 'products'));
+    const aa = documents.docs.map(
+      (doc) => {
+        const id = parseInt(doc.id);
+        const data = doc.data() as Product;
+        return data;
+      });
+    return aa;
   }
-
- 
 }

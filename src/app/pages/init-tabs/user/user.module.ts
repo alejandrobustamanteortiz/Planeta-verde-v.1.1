@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { UserPageRoutingModule } from './user-routing.module';
 
 import { UserPage } from './user.page';
+import { AuthService } from 'src/app/services/auth.service';
 
 @NgModule({
   imports: [
@@ -17,4 +18,6 @@ import { UserPage } from './user.page';
   ],
   declarations: [UserPage]
 })
-export class UserPageModule {}
+export class UserPageModule {
+
+}

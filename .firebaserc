@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "planeta-verde-80166": {
+      "hosting": {
+        "app": [
+          "planeta-verde-80166"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "planeta-verde-80166"
+  }
+}

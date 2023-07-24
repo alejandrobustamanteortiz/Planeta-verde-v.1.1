@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { InfiniteScrollCustomEvent } from '@ionic/angular';
+import { Product } from 'src/app/models/product.model';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPage implements OnInit {
 
-  constructor() { }
+  products!:Product[]
+
+  constructor(private cartService:CartService) { }
 
   ngOnInit() {
+    this.cartService.getProducts().subscribe(product =>
+        this.products = product
+      )
   }
 
+  eliminar(index:number){
+    this.cartService.removeProduct(index)
+  }
+
+
+  onIonInfinite(ev:Event) {
+    setTimeout(() => {
+      (ev as InfiniteScrollCustomEvent).target.complete();
+    }, 500);
+  }
 }

@@ -64,8 +64,9 @@
           </div>
         </ion-buttons>
 
-        <ion-buttons slot="end">
-          <ion-button><ion-icon name="cart"></ion-icon></ion-button>
+        <ion-buttons slot="end" >
+          <ion-button><ion-icon [routerLink]="['/init-tabs/cart']" name="cart"></ion-icon></ion-button>
+          <ion-label *ngIf="countCart">{{countCart}}</ion-label>
         </ion-buttons>
 
       </ion-toolbar>
@@ -100,7 +101,9 @@
         </div>
 
           <swiper-container slides-per-view="4.2">
-            <swiper-slide *ngFor="let item of categories"><app-category-item [item]="item"></app-category-item></swiper-slide>
+            <swiper-slide *ngFor="let item of categories">
+              <app-category-item [item]="item"></app-category-item>
+            </swiper-slide>
           </swiper-container>
           
      
@@ -113,7 +116,9 @@
       
 
           <swiper-container slides-per-view="2.2">
-            <swiper-slide *ngFor="let product of products"><app-product-card [item]="product"></app-product-card></swiper-slide>
+            <swiper-slide *ngFor="let product of products">
+              <app-product-card [item]="product"></app-product-card>
+            </swiper-slide>
           </swiper-container>
 
         

@@ -1,17 +1,32 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import{
+  redirectUnauthorizedTo,
+  redirectLoggedInTo,
+  AuthGuard
+} from '@angular/fire/auth-guard'
+
+const redirectUnhauthorithedToLogin = () => redirectUnauthorizedTo(['.'])
+const redirectLoggedInToHome = () => redirectLoggedInTo(['home'])
+
 
 const routes: Routes = [
   
   {
     path: '',
-    redirectTo: 'init-tabs',
-    pathMatch: 'full'
-
-  },
+    loadChildren: () => import('./pages/login/login.module').then( m => 
+      m.LoginPageModule)
+  },    
   {
     path: 'init-tabs',
-    loadChildren: () => import('./pages/init-tabs/init-tabs.module').then( m => m.InitTabsPageModule)
+    loadChildren: () => import('./pages/init-tabs/init-tabs.module').then( m => m.InitTabsPageModule),
+    canActivate: [AuthGuard],
+    data: {authGuardPipe:redirectUnhauthorithedToLogin}
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full',
   },
 ];
 
