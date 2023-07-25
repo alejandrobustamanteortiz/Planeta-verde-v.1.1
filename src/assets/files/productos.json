@@ -1,0 +1,38 @@
+{
+    "data":[
+        {
+            "id":1,
+            "categoryId": 3,
+            "name":"Leche almendras",
+            "price":2.85,
+            "description":"Bebida de arroz con almendras bio Vitariz 1 litro",
+            "image": "assets/productos/downimges/bebida-arroz-almendras-bio.png"
+        },
+        {
+            "id":2,
+            "name":"Agua de coco",
+            "categoryId": 3,
+            "price":4.35,
+            "description":"Agua de coco bio Isola Bio 500ml.",
+            "image": "assets/productos/downimges/agua-coco.png"
+        },
+        {
+            "id":3,
+            "name":"Bebida de avena",
+            "categoryId": 3,
+            "price":2.15,
+            "description":"Bebida de avena sin gluten bio Finestra Sul Cielo 1l.",
+            "image": "assets/productos/downimges/bebida-de-avena.png"
+        },
+        {
+            "id":4,
+            "name":"Vinagre de manzana",
+            "categoryId": 3,
+            "price":3.95,
+            "description":"Vinagre de manzana bio El Granero Integral 750 ml",
+            "image": "assets/productos/downimges/vinagre-manzana.png"
+        }
+
+    ]
+
+}

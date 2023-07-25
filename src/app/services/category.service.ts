@@ -1,20 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoryService {
-  getAll(){
 
-    return [
+  constructor(private http:HttpClient) { }
 
-      {id: 1, name: 'Todos', image: 'assets/categorias/all.png', active:true},
-      {id: 2, name: 'Fruta', image: 'assets/categorias/fruta.png', active:false},
-      {id: 3, name: 'Bebidas', image: 'assets/categorias/bebidas.png', active:false},
-      {id: 4, name: 'Cafe', image: 'assets/categorias/cafe.png', active:false},
-      {id: 5, name: 'Pasta', image: 'assets/categorias/Pasta.png', active:false},
-    ]
-  }
+
 
 
 }

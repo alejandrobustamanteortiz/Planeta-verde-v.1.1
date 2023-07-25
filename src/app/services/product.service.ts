@@ -8,6 +8,7 @@ import { Observable,take } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
+
   constructor(private firestore: Firestore) {}
 
   async getProducts(): Promise<Product[]> {
@@ -20,4 +21,10 @@ export class ProductService {
       });
     return aa;
   }
+
+
+  
+
+ 
+
 }

@@ -1,0 +1,43 @@
+{
+    "data":[   
+        
+    {
+
+        "id": 1,
+        "name": "Todos",
+        "image": "/assets/categorias/all.png",
+        "active" : false
+    
+    },
+    {
+
+        "id": 2,
+        "name": "Fruta",
+        "image": "/assets/categorias/fruta.png",
+        "active" : false
+        
+    },
+    {
+        "id": 3,
+        "name": "Bebidas",
+        "image":"/assets/categorias/bebidas.png",
+        "active" : false
+        
+    },
+    {
+        "id": 4,
+        "name": "Cafe",
+        "image": "/assets/categorias/cafe.png",
+        "active" : false
+        
+    },
+    {
+        "id": 5,
+        "name": "Pasta",
+        "image": "/assets/categorias/Pasta.png",
+        "active" : false
+        
+    }
+]
+
+}
