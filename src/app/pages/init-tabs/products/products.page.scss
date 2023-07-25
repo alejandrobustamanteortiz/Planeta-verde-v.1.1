@@ -1,0 +1,50 @@
+.contenedor{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+
+
+    .hijo1{
+
+        height: 100px;
+        height: 50px;
+        border: 2px solid black;
+    }
+
+    .hijo2{
+
+        height: 100px;
+        height: 50px;
+        border: 2px solid black;
+    }
+
+    .hijo3{
+
+        height: 100px;
+        height: 50px;
+        border: 2px solid black;
+    }
+
+
+    .hijo4{
+
+        height: 100px;
+        height: 50px;
+        border: 2px solid black;
+    }
+
+    .hijo5{
+
+        height: 100px;
+        height: 50px;
+        border: 2px solid black;
+    }
+    .hijo6{
+
+        height: 100px;
+        height: 50px;
+        border: 2px solid black;
+    }
+}

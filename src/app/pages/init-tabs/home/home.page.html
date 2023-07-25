@@ -3,42 +3,40 @@
   
   
   <ion-menu contentId="main-content">
-    <!-- HEADER DEL MENU LATERAL-->
+    
     <ion-header>
-      <ion-toolbar color="blank">
-        <div class="logoMenu">
-          <ion-img src="../../../../assets/icon/Planeta verde.png"></ion-img>
-        </div>
+      <ion-toolbar>
+        <!-- Logo de la aplicación -->
+        <ion-img src="../../../../assets/icon/Planeta verde.png"></ion-img>
       </ion-toolbar>
     </ion-header>
 
-    <!--CONTENIDO DEL MENU LATERAL-->
-    <ion-content class="ion-padding">
-      
-      <div class="listaCategoriasMenu">
-
+    <ion-content>
+      <!-- Opciones del menú -->
+      <ion-list>
         <ion-item>
           <ion-icon name="person"></ion-icon>
           <ion-label>Mi cuenta</ion-label>
         </ion-item>
-    
+
         <ion-item>
           <ion-icon name="menu"></ion-icon>
           <ion-label>Categorías</ion-label>
         </ion-item>
-        <ion-item >
+
+        <ion-item>
           <ion-icon name="mail"></ion-icon>
           <ion-label>Contacto</ion-label>
         </ion-item>
+
         <ion-item>
           <ion-icon name="information-circle"></ion-icon>
-          <ion-label>Avison legal</ion-label>
+          <ion-label>Aviso legal</ion-label>
         </ion-item>
-
-
-      </div>
-      
+      </ion-list>
     </ion-content>
+      
+    
   </ion-menu>
 
 
@@ -65,7 +63,10 @@
         </ion-buttons>
 
         <ion-buttons slot="end">
-          <ion-button><ion-icon name="cart"></ion-icon></ion-button>
+          <ion-button><ion-icon name="cart-outline"></ion-icon></ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-button><ion-icon name="person-outline"></ion-icon></ion-button>
         </ion-buttons>
 
       </ion-toolbar>
@@ -88,8 +89,6 @@
           <swiper-slide><ion-img src="./../../../../assets/banner/kiwiquote.png"></ion-img></swiper-slide>
           <swiper-slide><ion-img src="./../../../../assets/banner/Frame 1.png"></ion-img></swiper-slide>
         </swiper-container>
-
-
       </div>
         
 
@@ -105,14 +104,14 @@
           
      
         
-        <!--PRODUCTOS-->
+        <!--PRODUCTOS TOP VENTAS-->
         <div class="list-title">
           <h3 class="titulo">Top Ventas</h3>
         </div>
 
       
 
-          <swiper-container slides-per-view="2.2">
+          <swiper-container slides-per-view="2.5">
             <swiper-slide *ngFor="let product of products"><app-product-card [item]="product"></app-product-card></swiper-slide>
           </swiper-container>
 

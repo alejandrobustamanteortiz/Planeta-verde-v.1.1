@@ -1,4 +1,16 @@
-<h1>Pantalla productosss</h1>
+<ion-content class="ion-padding">
+    <app-header-pages></app-header-pages>
+
+    <div class="contenedor">
 
 
-<ion-searchbar></ion-searchbar>
+       <div class="hijo" *ngFor="let bebida of getBebidas()">
+
+        <app-product-card [item]="bebida"></app-product-card>
+
+       </div>
+        
+    </div>
+
+</ion-content>
+   
