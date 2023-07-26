@@ -21,6 +21,7 @@
         "id": 3,
         "name": "Bebidas",
         "image":"/assets/categorias/bebidas.png",
+        "link" : "bebidas",
         "active" : false
         
     },

@@ -1,7 +1,5 @@
 <ion-app>
 
-  
-  
   <ion-menu contentId="main-content">
     
     <ion-header>
@@ -99,7 +97,11 @@
         </div>
 
           <swiper-container slides-per-view="4.2">
-            <swiper-slide *ngFor="let item of categories"><app-category-item [item]="item"></app-category-item></swiper-slide>
+
+            <swiper-slide *ngFor="let item of categories">
+              <a href="{{item.link}}"><app-category-item [item]="item"></app-category-item></a>
+            </swiper-slide>
+            
           </swiper-container>
           
      

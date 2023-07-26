@@ -3,5 +3,6 @@ export interface Category {
     name: string;
     image: string;
     active: boolean;
+    link: string;
 
 }
