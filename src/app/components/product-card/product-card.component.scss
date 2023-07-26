@@ -2,10 +2,14 @@
 
     display: flex;
     flex-direction: column;
-    margin-right: 1rem;
+
     justify-content: center;
+    margin-right: 1rem;
     align-items: center;
+    
     border: 2px solid rgb(247, 235, 235);
+    width: 150px;
+    height: 280px;
 
     ion-img{
 
