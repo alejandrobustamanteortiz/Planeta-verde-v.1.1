@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'init-tabs',
-    loadChildren: () => import('./pages/init-tabs/init-tabs.module').then( m => m.InitTabsPageModule)
+    loadChildren: () => import('./pages/init-tabs.module').then( m => m.InitTabsPageModule)
   },
 ];
 

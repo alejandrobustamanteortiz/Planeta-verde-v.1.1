@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Category } from 'src/app/models/category.model';
 
 @Component({
@@ -10,8 +11,17 @@ export class CategoryItemComponent  implements OnInit {
 
   @Input() item!: Category;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
 
+  toByProduct(): void {
+  this.router.navigate([`./init-tabs/${this.item.link}`]);
 }
+
+}
+
+
+
+
+

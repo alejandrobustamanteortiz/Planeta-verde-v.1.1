@@ -99,7 +99,7 @@
           <swiper-container slides-per-view="4.2">
 
             <swiper-slide *ngFor="let item of categories">
-              <a href="{{item.link}}"><app-category-item [item]="item"></app-category-item></a>
+              <app-category-item [item]="item"></app-category-item>
             </swiper-slide>
             
           </swiper-container>

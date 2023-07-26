@@ -1,8 +1,9 @@
 <div class="wrapper" [ngClass]="item.active ? 'active' : ''">
 
   <div class="image-card">
-    <a></a>
-    <ion-img [src]="item.image"></ion-img>
+    
+    <ion-img [src]="item.image" (click)="toByProduct()"></ion-img>
+    
   </div>
     <p class="ion-no-margin">{{item.name}}</p>
 

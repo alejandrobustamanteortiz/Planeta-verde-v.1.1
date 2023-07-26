@@ -6,6 +6,7 @@
         "id": 1,
         "name": "Todos",
         "image": "/assets/categorias/all.png",
+        "link" : "todos",
         "active" : false
     
     },
@@ -14,6 +15,7 @@
         "id": 2,
         "name": "Fruta",
         "image": "/assets/categorias/fruta.png",
+        "link" : "fruta",
         "active" : false
         
     },
@@ -29,6 +31,7 @@
         "id": 4,
         "name": "Cafe",
         "image": "/assets/categorias/cafe.png",
+        "link" : "cafe",
         "active" : false
         
     },
@@ -36,6 +39,7 @@
         "id": 5,
         "name": "Pasta",
         "image": "/assets/categorias/Pasta.png",
+        "link" : "pasta",
         "active" : false
         
     }
