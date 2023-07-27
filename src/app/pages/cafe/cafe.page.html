@@ -1,13 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cafe</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <app-header-pages></app-header-pages>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cafe</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="contenedor">
+
+
+     <div class="hijo" *ngFor="let cafe of getCafes()">
+
+      <app-product-card [item]="cafe"></app-product-card>
+
+     </div>
+      
+  </div>
+
 </ion-content>
