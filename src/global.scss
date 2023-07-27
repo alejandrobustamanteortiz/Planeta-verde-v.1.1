@@ -28,3 +28,11 @@
 
 /*boostrap*/
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Importar los estilos de bootstrap-icons */
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+div,p,h1,h2,h3,h4,h5,h6,li,span{
+    font-family: 'Poppins', sans-serif !important;
+}
+

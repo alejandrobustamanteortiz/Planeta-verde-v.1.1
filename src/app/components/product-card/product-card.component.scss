@@ -1,62 +1,57 @@
-.food-card{
-
+.food-card {
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
-    margin-right: 1rem;
     align-items: center;
-    
     border: 2px solid rgb(247, 235, 235);
+    border-radius: 10px;
     width: 150px;
     height: 280px;
-
-    ion-img{
-
-        
-
-    }
-
-    .card-content{
-
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        
-
-
-        .title{
-
-            font-weight: 700;
-            font-size: 1rem;
-            margin-bottom: -15px;
-            margin-left: 5px;
-            padding-bottom: 5px;
-        }
-
+    margin-right: 1rem;
+  }
+  
+  .food-card ion-img {
     
-
-        .precio{
-
-            font-size: 1.3rem;
-            color: #ffb800;
-            margin-bottom: 0px;
-            margin-left: 5px;
- 
-        }
-
-        .desc{
-            font-size: 0.7rem;
-            margin-top: 0;
-            margin-left: 5px;
-
-        }
-    }
-
-
-
-}
-
-
+    height: 150px; /* Puedes ajustar la altura según tus necesidades */
+  /* Controlar cómo se ajusta la imagen dentro del contenedor */
+    object-fit: cover; /* Esto recorta y escalará la imagen para que se ajuste al contenedor sin distorsiones */
+    
+  }
+  
+  .food-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .food-card .title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: -15px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .food-card .precio {
+    font-size: 1.3rem;
+    color: #ffb800;
+    margin-bottom: 0.5 rem;
+    margin-top: 0.5rem;
+    margin-left: 5px;
+  }
+  
+  .food-card .desc {
+    font-size: 0.7rem;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  
+  .food-card .iconos-flex-row {
+    margin-top: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+  }
+  

@@ -13,8 +13,8 @@
             "name":"Agua de coco",
             "categoryId": 3,
             "price":4.35,
-            "description":"Agua de coco bio Isola Bio 500ml.",
-            "image": "assets/productos/downimges/agua-coco.png"
+            "description":"Agua refrescando de coco biorganic Isola Bio 500ml.",
+            "image": "assets/productos/downimges/aguacoco.png"
         },
         {
             "id":3,
@@ -31,6 +31,54 @@
             "price":3.95,
             "description":"Vinagre de manzana bio El Granero Integral 750 ml",
             "image": "assets/productos/downimges/vinagre-manzana.png"
+        },
+        {
+            "id":5,
+            "name":"Naranja",
+            "categoryId": 2,
+            "price":1.35,
+            "description":"Naranja fresca de la huerta valenciana",
+            "image": "assets/productos/downimges/naranja.png"
+        },
+        {
+            "id":6,
+            "name":"Pera",
+            "categoryId": 2,
+            "price":2.35,
+            "description":"Pera conferencia bio fresca murciana",
+            "image": "assets/productos/downimges/pera.png"
+        },
+        {
+            "id":7,
+            "name":"Kiwi",
+            "categoryId": 2,
+            "price":3.35,
+            "description":"Kiwi australiano refrescante vitaminico",
+            "image": "assets/productos/downimges/kiwi.png"
+        },
+        {
+            "id":8,
+            "name":"Datiles",
+            "categoryId": 2,
+            "price":1.35,
+            "description":"Racimo de datiles ilicitanos vitaminicos",
+            "image": "assets/productos/downimges/datiles.png"
+        },
+        {
+            "id":9,
+            "name":"Manzanas",
+            "categoryId": 2,
+            "price":1.85,
+            "description":"Manzana roja jugosa biorgánica ",
+            "image": "assets/productos/downimges/manzana500.png"
+        },
+        {
+            "id":10,
+            "name":"Platano",
+            "categoryId": 2,
+            "price":0.85,
+            "description":"Platano de canarias ",
+            "image": "assets/productos/downimges/platano.png"
         }
 
     ]
