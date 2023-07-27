@@ -32,6 +32,9 @@
             "description":"Vinagre de manzana bio El Granero Integral 750 ml",
             "image": "assets/productos/downimges/vinagre-manzana.png"
         },
+
+
+        
         {
             "id":5,
             "name":"Naranja",
@@ -79,8 +82,67 @@
             "price":0.85,
             "description":"Platano de canarias ",
             "image": "assets/productos/downimges/platano.png"
-        }
+        },
 
+
+        {
+            "id":11,
+            "name":"MASCAF Café Suave",
+            "categoryId": 4,
+            "price":8,
+            "description":"Café suave ecologico.",
+            "image": "assets/productos/downimges/mascafesu.png"
+        },
+        {
+            "id":12,
+            "name":"DESTINATION Café Intenso",
+            "categoryId": 4,
+            "price":6.25,
+            "description":"Café intenso ecologico, 100% puro arabica.",
+            "image": "assets/productos/downimges/destinationcafe.png"
+        },
+        {
+            "id":13,
+            "name":"SAULA Café Premium",
+            "categoryId": 4,
+            "price":12,
+            "description":"Café de sabor intenso premium.",
+            "image": "assets/productos/downimges/saulacafe.png"
+        },
+        {
+            "id":14,
+            "name":"Pura Vida Café Eco",
+            "categoryId": 4,
+            "price":18,
+            "description":"Café ecologico sin fertilizantes sinteticos.",
+            "image": "assets/productos/downimges/puravidacafe.png"
+        },
+
+
+        {
+            "id":15,
+            "name":"Coditos Castagno",
+            "categoryId": 5,
+            "price":1.64,
+            "description":"Pasta en coditos bio.",
+            "image": "assets/productos/downimges/castagnobio.png"
+        },
+        {
+            "id":16,
+            "name":"Espagueti Centeno Castagno",
+            "categoryId": 5,
+            "price":3.70,
+            "description":"Espagueti de centeno bio.",
+            "image": "assets/productos/downimges/centenocasta.png"
+        },
+        {
+            "id":17,
+            "name":"La Terra e Il Cielo Canestrini Espelta",
+            "categoryId": 5,
+            "price":3.80,
+            "description":"Pasta canestrini de espelta integral.",
+            "image": "assets/productos/downimges/canestrinipelta.png"
+        }
     ]
 
 }
